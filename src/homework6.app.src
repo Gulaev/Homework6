@@ -1,0 +1,18 @@
+{application, homework6, [
+    {description, "An OTP application"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {homework6_app, []}},
+    {applications, [
+        kernel,
+        stdlib
+    ]},
+    {env, []},
+    {modules, [
+        homework6_app,
+        homework6_sup,
+        homework6_cache
+    ]},
+    {licenses, ["Apache-2.0"]},
+    {links, []}
+]}.
