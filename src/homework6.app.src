@@ -1,18 +1,12 @@
-{application, homework6, [
-    {description, "An OTP application"},
-    {vsn, "0.1.0"},
-    {registered, []},
-    {mod, {homework6_app, []}},
-    {applications, [
-        kernel,
-        stdlib
-    ]},
-    {env, []},
-    {modules, [
-        homework6_app,
-        homework6_sup,
-        homework6_cache
-    ]},
-    {licenses, ["Apache-2.0"]},
-    {links, []}
-]}.
+{application, homework6,
+    [
+        {description, "Erlang Homework 6"},
+        {vsn, "1.0.0"},
+        {registered, [homework6_server]},
+        {modules, [homework6_app,
+            homework6_sup,
+            homework6_server]},
+        {applications, [kernel, stdlib]},
+        {mod, {homework6_app, []}},
+        {env, []}
+    ]}.
